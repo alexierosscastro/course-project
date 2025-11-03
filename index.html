@@ -1,22 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roomi Design Studio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roomi Design Studio</title>
+  <meta name="description" content="Roomi Design Studio offers cozy, modern interior design solutions.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Roomi Design Studio</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Designs</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    <h1>Welcome to Roomi Design Studio</h1>
-    <p>Your one-stop solution for interior design and home decor.</p>
+
+  <nav id="primary-navigation" class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="designs.html">Explore Designs</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Welcome to Roomi Design Studio!</h1>
+    <p>Cozy, modern interior design solutions tailored to your lifestyle.</p>
+    <img src="cozy-room-couch.png" alt="Cozy Room Interior">
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Our Philosophy</h2>
+      <p>Your one-stop solution for interior design and home decor. We blend comfort with style to create spaces that feel like home.</p>
+    </section>
+
+    <section class="gallery">
+      <h2>Featured Designs</h2>
+      <div class="image-grid">
+        <img src="design-sketch.png" alt="Design Sketch">
+        <img src="modern-living-room.png" alt="Modern Living Room">
+      </div>
+    </section>
+
+    <button class="explore-more"> <a href="designs.html">Explore More</a></button>
+
+    <section class="about-text">
+      <h2>Why Choose Us?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nisi tempore alias repellat...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Roomi Design Studio</p>
+  </footer>
+
+  <script>
+    let lastScrollY = window.scrollY;
+    const nav = document.getElementById('primary-navigation');
+
+    window.addEventListener('scroll', () => {
+      if (!nav) return;
+      if (window.scrollY > lastScrollY) {
+        nav.classList.add('hide');
+      } else {
+        nav.classList.remove('hide');
+      }
+      lastScrollY = window.scrollY;
+    });
+  </script>
+
 </body>
 </html>
