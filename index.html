@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roomi Design Studio</title>
   <meta name="description" content="Roomi Design Studio offers cozy, modern interior design solutions.">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
@@ -18,13 +20,15 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+  <div>
+    <header class="hero">
+      <h1>Welcome to Roomi Design Studio!</h1>
+      <p>Cozy, modern interior design solutions tailored to your lifestyle.</p>
+      <img src="images/cozy-room-couch.png" alt="Cozy Room Interior">
+    </header>
+  </div>
 
-  <header class="hero">
-    <h1>Welcome to Roomi Design Studio!</h1>
-    <p>Cozy, modern interior design solutions tailored to your lifestyle.</p>
-    <img src="cozy-room-couch.png" alt="Cozy Room Interior">
-  </header>
-
+<div class="container">
   <main>
     <section class="intro">
       <h2>Our Philosophy</h2>
@@ -36,7 +40,7 @@
       <div class="image-grid">
         <img src="design-sketch.png" alt="Design Sketch">
         <img src="modern-living-room.png" alt="Modern Living Room">
-      </div>
+     
     </section>
 
     <button class="explore-more"> <a href="designs.html">Explore More</a></button>
@@ -46,6 +50,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nisi tempore alias repellat...</p>
     </section>
   </main>
+</div>
 
   <footer>
     <p>&copy; 2024 Roomi Design Studio</p>
@@ -65,6 +70,7 @@
       lastScrollY = window.scrollY;
     });
   </script>
+
 
 </body>
 </html>
