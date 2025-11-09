@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/home.css">
 </head>
+
 <body>
 
   <nav id="primary-navigation" class="nav">
@@ -28,49 +29,51 @@
     </header>
   </div>
 
-<div class="container">
-  <main>
-    <section class="intro">
-      <h2>Our Philosophy</h2>
-      <p>Your one-stop solution for interior design and home decor. We blend comfort with style to create spaces that feel like home.</p>
-    </section>
+  <div class="container">
+    <main>
+      <section class="intro">
+        <h2>Our Philosophy</h2>
+        <p>Your one-stop solution for interior design and home decor. We blend comfort with style to create spaces that
+          feel like home.</p>
+      </section>
 
-    <section class="gallery">
-      <h2>Featured Designs</h2>
-      <div class="image-grid">
-        <img src="design-sketch.png" alt="Design Sketch">
-        <img src="modern-living-room.png" alt="Modern Living Room">
-     
-    </section>
+      <section class="gallery">
+        <h2>Featured Designs</h2>
+        <div class="image-grid">
+          <img src="design-sketch.png" alt="Design Sketch">
+          <img src="modern-living-room.png" alt="Modern Living Room">
 
-    <button class="explore-more"> <a href="designs.html">Explore More</a></button>
+      </section>
 
-    <section class="about-text">
-      <h2>Why Choose Us?</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nisi tempore alias repellat...</p>
-    </section>
-  </main>
-</div>
+      <button class="explore-more"> <a href="designs.html">Explore More</a></button>
 
-  <footer>
-    <p>&copy; 2024 Roomi Design Studio</p>
-  </footer>
-
-  <script>
-    let lastScrollY = window.scrollY;
-    const nav = document.getElementById('primary-navigation');
-
-    window.addEventListener('scroll', () => {
-      if (!nav) return;
-      if (window.scrollY > lastScrollY) {
-        nav.classList.add('hide');
-      } else {
-        nav.classList.remove('hide');
-      }
-      lastScrollY = window.scrollY;
-    });
-  </script>
-
-
+      <section class="about-text">
+        <h2>Why Choose Us?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nisi tempore alias repellat...</p>
+      </section>
+    </main>
+  </div>
 </body>
+
+<footer>
+  <p>&copy; 2025 Roomi Design Studio</p>
+</footer>
+
+<script>
+
+  // Hide nav on scroll down, show on scroll up //
+  let lastScrollY = window.scrollY;
+  const nav = document.getElementById('primary-navigation');
+
+  window.addEventListener('scroll', () => {
+    if (!nav) return;
+    if (window.scrollY > lastScrollY) {
+      nav.classList.add('hide');
+    } else {
+      nav.classList.remove('hide');
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+
 </html>
