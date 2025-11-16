@@ -69,9 +69,11 @@ nav a:hover {
 /* Hero Section */
 
 .hero {
-  margin-top: 90px;
-  padding: 60px 20px;
+  margin-top: -90px; /* pulls background color behind nav */
+  padding-top: 250px; /* adds space so content doesn't sit under nav */
+  padding-bottom: 60px;
   text-align: center;
+
   background: linear-gradient(to right, #f9f9f9, #eaeaea);
 }
 
