@@ -1,0 +1,105 @@
+/* Reset & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Carousel Container */
+.carousel {
+  width: 90%;
+  max-width: 700px;
+  height: 400px;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Slide Styles */
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease 200ms;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  pointer-events: auto;
+  transition-delay: 0ms;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  margin-left: 1rem;
+}
+
+.carousel-button.next {
+  margin-right: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}

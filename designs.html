@@ -1,15 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Designs</title>
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/nav.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Designs</title>
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/designs.css" />
 </head>
 <body>
-<div>
+
+  <!-- Navigation -->
   <nav id="primary-navigation" class="nav">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -18,30 +19,77 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-</div>
-<body>
-  <div class="container">
-  <header class="hero">
-    <h1>Explore Our Designs</h1>
-    <p>Dive into our curated collection of interior design inspirations and ideas.</p>
-  </header>
-<main>
-    <section class="contact-form">
-      <h2>Hello! Explore Our Designs</h2>
-      <p>Discover a variety of interior design styles and inspirations curated just for you. Whether you're looking for modern minimalism or cozy rustic vibes, we've got something to spark your creativity!</p>
-      </form>
-    </section>
-  </main>
-    
-  </body>
-</div>
 
+  <!-- Main Content -->
+  <div class="container">
+    <header class="hero">
+      <h1>Explore Our Designs</h1>
+      <p>Dive into our curated collection of interior design inspirations and ideas.</p>
+    </header>
+
+    <main>
+      <section class="contact-form">
+        <h2>Hello! Explore Our Designs</h2>
+        <p>
+          Discover a variety of interior design styles and inspirations curated just for you.
+          Whether you're looking for modern minimalism or cozy rustic vibes, we've got something to spark your creativity!
+        </p>
+      </section>
+
+      <section aria-label="Design Options">
+        <div class="carousel" aria-live="polite">
+          <div class="carousel-controls">
+            <button class="carousel-button prev" data-carousel-button aria-label="Previous Slide">&#8678;</button>
+            <button class="carousel-button next" data-carousel-button aria-label="Next Slide">&#8680;</button>
+          </div>
+          <ul>
+            <li class="slide" data-active>
+              <img src="https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?auto=format&fit=crop&q=80&w=1931" alt="Modern Living Room Design" />
+            </li>
+            <li class="slide">
+              <img src="https://images.unsplash.com/photo-1616137303871-05ce745f9cdb?auto=format&fit=crop&q=80&w=1632" alt="Modern Living Room Design" />
+            </li>
+            <li class="slide">
+              <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&q=80&w=1932" alt="Modern Living Room Design" />
+            </li>
+            <li class="slide">
+              <img src="https://images.unsplash.com/photo-1613685301594-d1cb93e37009?auto=format&fit=crop&q=80&w=1632" alt="Modern Living Room Design" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Roomi Design Studio</p>
   </footer>
-  <script>
 
-    // Hide nav on scroll down, show on scroll up //
+  <!-- Carousel Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll("[data-carousel-button]");
+
+      buttons.forEach(button => {
+        button.addEventListener("click", () => {
+          const offset = button.classList.contains("next") ? 1 : -1;
+          const slides = button.closest(".carousel").querySelectorAll(".slide");
+          const activeSlide = button.closest(".carousel").querySelector("[data-active]");
+          let newIndex = [...slides].indexOf(activeSlide) + offset;
+
+          if (newIndex < 0) newIndex = slides.length - 1;
+          if (newIndex >= slides.length) newIndex = 0;
+
+          slides[newIndex].setAttribute("data-active", "");
+          activeSlide.removeAttribute("data-active");
+        });
+      });
+    });
+  </script>
+
+  <!-- Navigation Scroll Behavior -->
+  <script>
     let lastScrollY = window.scrollY;
     const nav = document.getElementById('primary-navigation');
 
@@ -55,4 +103,6 @@
       lastScrollY = window.scrollY;
     });
   </script>
+
+</body>
 </html>
