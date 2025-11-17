@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+/* Reset Styles thing */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -9,11 +9,61 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 200px 20px 60px;
+  background: linear-gradient(to right, #f9f9f9, #eaeaea);
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.intro p {
+  font-size: 16px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Carousel Container */
 .carousel {
-  width: 90%;
+  width: 100%;
   max-width: 700px;
   height: 400px;
   margin: 40px auto;
@@ -23,7 +73,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.carousel > ul {
+.carousel-track {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -47,7 +97,7 @@ body {
   transition-delay: 0ms;
 }
 
-.slide > img {
+.slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -56,7 +106,11 @@ body {
   transition: transform 0.5s ease;
 }
 
-/* Carousel Controls */
+.slide[data-active] img:hover {
+  transform: scale(1.03);
+}
+
+/* Carousel Stuff */
 .carousel-controls {
   width: 100%;
   position: absolute;
@@ -81,8 +135,8 @@ body {
 .carousel-button:hover,
 .carousel-button:focus {
   background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  outline: 1px solid black;
+  outline: 2px dashed #fff;
+  outline-offset: 4px;
 }
 
 .carousel-button.prev {
@@ -102,4 +156,25 @@ footer {
   color: #666;
   border-top: 1px solid #ddd;
   margin-top: 40px;
+}
+
+/* Enhancements */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p,
+  .intro p {
+    font-size: 16px;
+  }
+
+  .carousel {
+    height: 250px;
+  }
+
+  .carousel-button {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
 }

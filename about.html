@@ -6,54 +6,61 @@
   <title>About Roomi Design Studio</title>
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/about.css" />
 </head>
 
-<div>
-  <nav id="primary-navigation" class="nav">
+<body>
+  <!-- nav -->
+  <nav id="primary-navigation" class="nav" aria-label="Main Navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="designs.html">Explore Designs</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="about.html" class="active">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-</div>
-<body></body>
+
+  <!-- hero -->
+  <header class="hero">
+    <h1>About Roomi Design Studio</h1>
+    <p>Designing cozy, modern spaces that feel like home.</p>
+  </header>
+
 
   <div class="container">
-    <header>
-      <h1>About Roomi Design Studio</h1>
-    </header>
-
     <main>
-      <p>At Roomi Design Studio, we specialize in creating beautiful and functional living spaces. Our team of experienced designers is dedicated to bringing your vision to life.</p>
+      <section class="studio-history">
+        <h2>Our Story</h2>
+        <p>At Roomi Design Studio, we specialize in creating beautiful and functional living spaces. Our team of experienced designers is dedicated to bringing your vision to life.</p>
+        <p>Founded in 2020, Roomi Design Studio has quickly become a trusted name in interior design. We believe that a well-designed space can transform lives, and we are passionate about helping our clients achieve their dream homes.</p>
+      </section>
 
-      <p>Founded in 2020, Roomi Design Studio has quickly become a trusted name in interior design. We believe that a well-designed space can transform lives, and we are passionate about helping our clients achieve their dream homes.</p>
+      <section class="services">
+        <h2>What We Offer</h2>
+        <ul>
+          <li>Interior Design Consultation</li>
+          <li>Space Planning</li>
+          <li>Custom Furniture Design</li>
+          <li>Home Staging</li>
+        </ul>
+      </section>
 
-      <p>Our services include:</p>
-      <ul>
-        <li>Interior Design Consultation</li>
-        <li>Space Planning</li>
-        <li>Custom Furniture Design</li>
-        <li>Home Staging</li>
-      </ul>
-
-      <p>We pride ourselves on our attention to detail, creativity, and commitment to customer satisfaction. Whether you're looking to redesign a single room or your entire home, Roomi Design Studio is here to help.</p>
-
-      <p>Contact us today to schedule a consultation and start your design journey!</p>
-
-      <button class="explore-more">
-        <a href="contact.html">Get in Touch</a>
-      </button>
+      <section class="philosophy">
+        <h2>Why Choose Us?</h2>
+        <p>We pride ourselves on our attention to detail, creativity, and commitment to customer satisfaction. Whether you're looking to redesign a single room or your entire home, Roomi Design Studio is here to help.</p>
+        <p>Contact us today to schedule a consultation and start your design journey!</p>
+        <a href="contact.html" class="explore-more">Get in Touch</a>
+      </section>
     </main>
-
-    <footer>
-      <p>&copy; 2025 Roomi Design Studio</p>
-    </footer>
   </div>
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Roomi Design Studio</p>
+  </footer>
+
+  <!-- Scroll Behavior Script -->
   <script>
-    // Hide nav on scroll down, show on scroll up //
     let lastScrollY = window.scrollY;
     const nav = document.getElementById('primary-navigation');
 

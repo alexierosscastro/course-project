@@ -1,0 +1,129 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 200px 20px 60px;
+  background: linear-gradient(to right, #f9f9f9, #eaeaea);
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Contact Form Section */
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  padding: 20px;
+}
+
+.contact-form h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #999;
+  outline: none;
+}
+
+/* Submit Button (reusing the .explore-more) */
+.explore-more {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.explore-more:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+/* Enhancements */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p,
+  .contact-form h2 {
+    font-size: 16px;
+  }
+
+  .explore-more {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+}

@@ -1,83 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roomi Design Studio</title>
-  <meta name="description" content="Roomi Design Studio offers cozy, modern interior design solutions.">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/home.css">
+  <meta name="description" content="Roomi Design Studio offers cozy, modern interior design solutions." />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 
 <body>
-
-  <nav id="primary-navigation" class="nav">
+  <!-- nav -->
+  <nav id="primary-navigation" class="nav" aria-label="Main Navigation">
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="designs.html">Explore Designs</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <div>
-    <header class="hero">
-      <h1>Welcome to Roomi Design Studio!</h1>
-      <p>Cozy, modern interior design solutions tailored to your lifestyle.</p>
-      <img src="images/cozy-room-couch.png" alt="Cozy Room Interior">
-    </header>
-  </div>
 
+  <!-- hero -->
+  <header class="hero">
+    <h1>Welcome to Roomi Design Studio!</h1>
+    <p>Cozy, modern interior design solutions tailored to your lifestyle.</p>
+    <img src="images/cozy-room-couch.png" alt="Cozy Room Interior" />
+  </header>
+
+  
   <div class="container">
     <main>
       <section class="intro">
         <h2>Our Philosophy</h2>
-        <p>Your one-stop solution for interior design and home decor. We blend comfort with style to create spaces that
-          feel like home.</p>
+        <p>Your one-stop solution for interior design and home decor. We blend comfort with style to create spaces that feel like home.</p>
       </section>
 
       <section class="gallery">
         <h2>Featured Designs</h2>
         <div class="image-grid">
           <a href="designs.html" class="image-button">
-            <img src="images/design-sketch.jpg" alt="Design Sketch"></a>
-          <a href="designs.html" class="image-button"><img src="images/roomdesign2.jpg" alt="Modern Living Room"></a>
-
+            <img src="images/design-sketch.jpg" alt="Design Sketch" />
+          </a>
+          <a href="designs.html" class="image-button">
+            <img src="images/roomdesign2.jpg" alt="Modern Living Room" />
+          </a>
+        </div>
+        <a href="designs.html" class="explore-more">Explore More</a>
       </section>
 
-      <button class="explore-more"> <a href="designs.html">Explore More</a></button>
-
       <section class="about-text">
-
-        <br>
-        <br>
-
         <h2>Why Choose Us?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nisi tempore alias repellat...</p>
+        <p>We believe in creating spaces that reflect your personality. Our designs are cozy, modern, and tailored to your lifestyle.</p>
       </section>
     </main>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Roomi Design Studio</p>
+  </footer>
+
+  <!-- Scroll Behavior Script -->
+  <script>
+    let lastScrollY = window.scrollY;
+    const nav = document.getElementById('primary-navigation');
+
+    window.addEventListener('scroll', () => {
+      if (!nav) return;
+      if (window.scrollY > lastScrollY) {
+        nav.classList.add('hide');
+      } else {
+        nav.classList.remove('hide');
+      }
+      lastScrollY = window.scrollY;
+    });
+  </script>
+
 </body>
-
-<footer>
-  <p>&copy; 2025 Roomi Design Studio</p>
-</footer>
-
-<script>
-  // Hide nav on scroll down, show on scroll up //
-  let lastScrollY = window.scrollY;
-  const nav = document.getElementById('primary-navigation');
-
-  window.addEventListener('scroll', () => {
-    if (!nav) return;
-    if (window.scrollY > lastScrollY) {
-      nav.classList.add('hide');
-    } else {
-      nav.classList.remove('hide');
-    }
-    lastScrollY = window.scrollY;
-  });
-</script>
-
 </html>

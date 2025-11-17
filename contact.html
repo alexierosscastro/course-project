@@ -1,59 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Roomi Design Studio</title>
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/nav.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Roomi Design Studio</title>
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/contact.css" />
 </head>
+
 <body>
-<div>
-  <nav id="primary-navigation" class="nav">
+  <!-- nav -->
+  <nav id="primary-navigation" class="nav" aria-label="Main Navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="designs.html">Explore Designs</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
-  </nav></div>
+  </nav>
 
-  <div class="container">
+  <!-- hero -->
   <header class="hero">
     <h1>Contact Us</h1>
     <p>We'd love to hear from you! Reach out with any questions or inquiries.</p>
   </header>
-<body>
-  
-</body>
-  <main>
-    <section class="contact-form">
-      <h2>Get in Touch</h2>
-      <form action="#" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-<br> <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-<br> <br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-<br> <br>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-  
-  
-</div>
 
+ 
+  <div class="container">
+    <main>
+      <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or question..."></textarea>
+          </div>
+
+          <button type="submit" class="explore-more">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Roomi Design Studio</p>
   </footer>
 
+  <!-- Scroll Behavior Script -->
   <script>
-    // Hide nav on scroll down, show on scroll up //
     let lastScrollY = window.scrollY;
     const nav = document.getElementById('primary-navigation');
 

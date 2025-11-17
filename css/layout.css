@@ -1,33 +1,61 @@
-
+/* Base Reset */
 body {
-  margin: 0%;
-  padding: 0%;
-  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 200px;
-}
-
-header, footer {
-  padding: 20px;
-  background-color: #f5f5f5;
-}
-
-main {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-section {
-  margin-bottom: 40px;
+  background-color: #fafafa;
+  color: #333;
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header Footer Styling */
+header,
+footer {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Content Spacing */
+main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Section Spacing */
+section {
+  margin-bottom: 40px;
+}
+
+/* Enhancements */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  header,
+  footer {
+    padding: 15px;
+  }
+
+  main {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
 }
