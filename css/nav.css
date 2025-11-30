@@ -1,3 +1,19 @@
+/* =========================
+   Logo & Branding Styles
+   ========================= */
+
+.logo img {
+  height: 90px;
+  width: auto;
+  display: block;
+  max-height: 90px;
+  
+}
+
+nav a:hover:not(.logo) {
+  background-color: #cacaca;
+  border-radius: 30px;
+}
 
 .nav {
   position: fixed;
@@ -9,6 +25,13 @@
   height: 90px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   border-bottom: 2px solid #e0e0e0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .nav.hide {
@@ -37,12 +60,10 @@ nav a {
   transition: 0.2s ease;
 }
 
-nav a:hover {
-  background-color: #cacaca;
-  border-radius: 30px;
-}
 
-/* Base Styles */
+/* =========================
+   Base Styles
+   ========================= */
 * {
   margin: 0;
   padding: 0;
@@ -65,8 +86,9 @@ body {
   line-height: 1.6;
 }
 
-
-/* Footer */
+/* =========================
+   Footer Styles
+   ========================= */
 footer {
   background-color: #f0f0f0;
   text-align: center;

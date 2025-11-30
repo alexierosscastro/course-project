@@ -91,6 +91,11 @@ img {
 }
 
 /* Explore More Button */
+
+section {
+  text-align: center;
+}
+
 .explore-more {
   display: inline-block;
   padding: 15px 40px;
