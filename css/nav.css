@@ -7,7 +7,9 @@
   width: auto;
   display: block;
   max-height: 90px;
-  
+  position: relative;
+  height: var(--hero);
+ max-width: fit-content;
 }
 
 nav a:hover:not(.logo) {
@@ -47,7 +49,7 @@ nav a:hover:not(.logo) {
 }
 
 .nav li {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 nav a {

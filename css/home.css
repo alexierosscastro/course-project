@@ -99,17 +99,17 @@ section {
 .explore-more {
   display: inline-block;
   padding: 15px 40px;
-  background-color: #333;
+  background-color:#555 ;
   color: #fff;
   border-radius: 8px;
   font-size: 20px;
   text-align: center;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
   margin: 30px auto;
 }
 
 .explore-more:hover {
-  background-color: #555;
+  background-color: rgb(237, 164, 128);
 }
 
 /* About Text Section */
