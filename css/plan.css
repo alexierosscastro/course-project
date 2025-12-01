@@ -52,6 +52,7 @@
     text-align: center;
     color: #e74c3c;
     font-weight: bold;
+ 
 }
 
 .trash-can.drag-over-trash {
@@ -59,3 +60,4 @@
     color: white;
     border-color: white;
 }
+

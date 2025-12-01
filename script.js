@@ -78,3 +78,5 @@ trashCanArea.addEventListener('drop', (e) => {
     }
 });
 
+
+
