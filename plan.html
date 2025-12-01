@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Designer D&D</title>
+    <link rel="stylesheet" href="css/plan.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+
+<body>
+
+    <nav id="primary-navigation" class="nav" aria-label="Main Navigation">
+    <div><a href="index.html" class="logo">
+    <img src="images/logodesignroom.png" alt="Roomi Design Studio Logo" />
+  </a></div>
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="plan.html"> Plan Your Room</a></li>
+      <li><a href="designs.html">Our Designs</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <h1>Room Planner</h1>
+    <div class="container">
+        <!-- Palette of draggable items -->
+        <div class="sidebar">
+            <div class="furniture-item" id="sofa" draggable="true">Sofa</div>
+            <div class="furniture-item" id="table" draggable="true">Table</div>
+            <div class="furniture-item" id="chair" draggable="true">Chair</div>
+        </div>
+<!-- Add a trash can area -->
+<div class="trash-can" id="trash-can-area">
+    🗑️ Drag here to delete
+</div>
+
+        <!-- The room/drop zone -->
+        <div class="room-plan" id="room-plan-area">
+            Drop items here
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

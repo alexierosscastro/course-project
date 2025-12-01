@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.furniture-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #3498db;
+    color: white;
+    cursor: grab;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.furniture-item:hover {
+    opacity: 0.8;
+}
+
+.room-plan {
+    flex-grow: 1;
+    height: 500px; /* Define the size of your room */
+    border: 2px dashed #ccc;
+    background-color: #fafafa;
+    padding: 10px;
+    position: relative; /* Crucial for absolute positioning of dropped items */
+}
+
+.room-plan.drag-over {
+    border-color: #4CAF50;
+    background-color: #e9e9e9;
+}
+
+/* Style for when an item is actively being dragged */
+.dragging {
+    opacity: 0.4;
+    cursor: grabbing;
+}
+
+.trash-can {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed #e74c3c;
+    background-color: #fdd;
+    text-align: center;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.trash-can.drag-over-trash {
+    background-color: #e74c3c;
+    color: white;
+    border-color: white;
+}
