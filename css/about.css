@@ -46,32 +46,8 @@ section h2 {
   text-align: center;
 }
 
-/* Paragraphs */
-section p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 
-/* Services List */
-.services ul {
-  list-style: none;
-  padding: 0;
-  max-width: 600px;
-  margin: 0 auto 40px;
-}
 
-.services li {
-  font-size: 16px;
-  color: #444;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-}
 
 /* Explore More Button */
 
@@ -125,4 +101,61 @@ footer {
   .services li {
     font-size: 15px;
   }
+}
+
+/* Table CSS */
+
+
+.offers {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-collapse: collapse; 
+  border: 2px solid #000000;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+  margin-bottom: 40px;
+background-color: #c7dfe4; 
+    border: 1px solid #000000;   
+    overflow: hidden;         
+    width: 100%;    
+  font-size: 1.2em;
+}
+
+h2  {
+  text-align: center;
+}
+
+.offers caption {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.offers th,
+.offers td {
+  border: 2px solid #392003; 
+  text-align: center;
+  padding: 10px;
+  word-wrap: break-word;
+  max-width: 120px;
+  box-shadow: inset 0 0 2px #ede3cc; 
+
+}
+
+.offers thead {
+  background-color: hsl(27, 100%, 74%);
+  color: white;
+    -webkit-text-stroke: 0.2px black;
+    text-shadow: 1px 1px 0 rgb(44, 43, 41);
+ font-size: 30px;
+}
+
+.services {
+   
+
 }

@@ -1,60 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thank You!</title>
-  <link rel="stylesheet" href="css/thanks.css" />
-  <style>
-    body {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      background-color: #f0f8ff;
-      margin: 20px;
-      padding: 20px;
-      border: 2px solid #add8e6;
-      border-radius: 10px;
-    }
+  <title>Thank You! | RDS</title>
+ 
+ <style>
+   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .thank-you-container {
-      max-width: 600px;
-      margin: auto;
-      padding: 30px;
-      background-color: #ffffff;
-      border: 1px solid #dcdcdc;
-      border-radius: 8px;
-      text-align: center;
-    }
 
-    h1 {
-      color: #4682b4;
-    }
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:  rgb(237, 164, 128);   
+  height: 100vh;              
+  display: flex;             
+  justify-content: center;     
+  align-items: center;        
+}
 
-    p {
-      font-size: 1.2em;
-      color: #333;
-    }
 
-    .back-button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #4682b4;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 1em;
-    }
+.thank-you-container {
+  max-width: 600px;
+  width: 90%;               
+  padding: 30px;
+  background-color: #ffffff; 
+  border: 2px solid #add8e6;  
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
 
-    .back-button:hover {
-      background-color: #5a9bd6;
-    }
+
+h1 {
+  color: #4682b4;              
+  margin-bottom: 15px;
+}
+
+
+p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Back button */
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #5a9bd6;
+}
+  .logo img {
+  height: 88px;
+  width: 88px;
+  display: block;
+  max-height: 88px;
+  position: relative;
+  height: var(--hero);
+ max-width: fit-content;
+}
+
+.thank-you-container {
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  text-align: center;  
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 2px auto; 
+  max-width: 190px;        
+  width: 100%;          
+  height: auto;            
+}
+
   </style>
+  
 </head>
+
 <body>
   <div class="thank-you-container">
+    <img src="images/logodesignroom.png" alt="Roomi Design Studio Logo" class="logo"/>
     <h1>Thank You!</h1>
     <p>Your form has been successfully submitted.</p>
     <a href="contact.html" class="back-button">Go Back</a>
   </div>
 </body>
+
 </html>
