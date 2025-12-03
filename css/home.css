@@ -121,7 +121,7 @@ section {
 .gallerycaption {
   font-size: 30px;
   margin-bottom: 10px;
-  color: #ff8708;
+  color: #000000;
   background-color: #7cd5ff37;
   border-radius: 2px;
   width: 100%; }
@@ -196,3 +196,42 @@ aspect-ratio: none;
   }
 }
 
+/* General Button Styles */
+.cta-button {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 8px 10px 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/*planner button and contact button */
+
+.cta-button:not(.secondary) {
+  background-color: transparent;
+  color: #ff6f61;
+  border: 2px solid #ff6f61;
+}
+
+.cta-button:not(.secondary):hover {
+  background-color: #ff6f61;
+  color: white;
+  transform: translateY(-2px);
+}
+
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: #ff6f61;
+  border: 2px solid #ff6f61;
+}
+
+.cta-button.secondary:hover {
+  background-color: #ff6f61;
+  color: white;
+  transform: translateY(-2px);
+}
