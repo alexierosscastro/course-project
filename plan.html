@@ -9,51 +9,83 @@
     <link rel="stylesheet" href="css/nav.css">
 </head>
 
-
 <body>
-
     <nav id="primary-navigation" class="nav" aria-label="Main Navigation">
         <div><a href="index.html" class="logo">
                 <img src="images/logodesignroom.png" alt="Roomi Design Studio Logo" />
             </a></div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="plan.html"> Plan Your Room</a></li>
+            <li><a href="plan.html" class="active">Plan Your Room</a></li>
             <li><a href="designs.html">Our Designs</a></li>
-            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
+      <header class="hero">
     <h1>A Simple Roomi Planner</h1>
+    <p>Create a rough draft of your ideal room below</p>
+  </header>
+
     <div class="container">
-        <!-- Palette of draggable items -->
-               <div><input type="text" id="new-item-name" placeholder="Enter item name">
-        <button id="add-itembutt">Add Item</button></div> 
-<div class="sidebar">
-            <div class="furniture-item" id="sofa" draggable="true">Sofa</div>
-            <div class="furniture-item" id="table" draggable="true">Table</div>
-            <div class="furniture-item" id="chair" draggable="true">Chair</div>
+        <!-- Sidebar + Add Item Form -->
+        <div class="sidebar">
+            <div><input type="text" id="new-item-name" placeholder="Enter item name">
+                <button id="add-itembutt" class="add-itembutt">Add Item</button></div>
+
+            <div class="furniture-item" id="sofa">Sofa</div>
+            <div class="furniture-item" id="table">Table</div>
+            <div class="furniture-item" id="chair">Chair</div>
         </div>
 
-
+        <!-- Room Area -->
         <div class="room-plan" id="room-plan-area">
             Drop items here
         </div>
 
-
-
+        <!-- Trash Can -->
         <div class="trash-can" id="trash-can-area">
-            🗑️ Drag here to delete
+            🗑️ Drag & CLick here to delete
         </div>
     </div>
-    <script src="script.js"></script>
-</body>
 
+    <div class="directions">
+    <h3>&#128204; How to Use the Room Planner:</h3>
+ 
+    <ul>
+        <li>Drag items from the sidebar into the room area.</li>
+        <li>Move items around by clicking and dragging them.</li>
+        <li>Resize items by dragging the bottom-right corner.</li>
+        <li>Drag items to the trash and click to delete them.</li>
+        <li>Use the input box to add your own custom items.</li>
+    </ul>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Roomi Design Studio</p>
+  </footer>
+
+
+    <script src="script.js"></script>
+
+  <!-- Scroll Behavior Script -->
+<script>
+    let lastScrollY = window.scrollY;
+    const nav = document.getElementById('primary-navigation');
+
+    window.addEventListener('scroll', () => {
+      if (!nav) return;
+      if (window.scrollY > lastScrollY) {
+        nav.classList.add('hide');
+      } else {
+        nav.classList.remove('hide');
+      }
+      lastScrollY = window.scrollY;
+    });
+
+  </script>
+</body>
+  
 </html>
