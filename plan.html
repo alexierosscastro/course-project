@@ -31,21 +31,25 @@
     <br>
     <br>
 
-    <h1>Room Planner</h1>
+    <h1>A Simple Roomi Planner</h1>
     <div class="container">
         <!-- Palette of draggable items -->
-        <div class="sidebar">
+               <div><input type="text" id="new-item-name" placeholder="Enter item name">
+        <button id="add-itembutt">Add Item</button></div> 
+<div class="sidebar">
             <div class="furniture-item" id="sofa" draggable="true">Sofa</div>
             <div class="furniture-item" id="table" draggable="true">Table</div>
             <div class="furniture-item" id="chair" draggable="true">Chair</div>
         </div>
-        <!-- Add a trash can area -->
-      
+
 
         <div class="room-plan" id="room-plan-area">
             Drop items here
-        </div> 
-         <div class="trash-can" id="trash-can-area">
+        </div>
+
+
+
+        <div class="trash-can" id="trash-can-area">
             🗑️ Drag here to delete
         </div>
     </div>
@@ -53,4 +57,3 @@
 </body>
 
 </html>
-

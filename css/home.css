@@ -30,7 +30,7 @@ a {
 }
 
 .hero h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 10px;
   color: #444;
 }
@@ -112,19 +112,20 @@ section {
   background-color: rgb(237, 164, 128);
 }
 
-/* About Text Section */
-.about-text {
-  text-align: center;
-  margin-top: 60px;
-}
+.gallerycaption {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #ff8708;
+  background-color: #7cd5ff37;
+  border-radius: 2px;
+  width: 100%; }
 
-.about-text h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #333;
-}
+  .gallery {
+  background-color: #f5cf9a1e;
+  }
 
-.about-text p {
+
+.p {
   font-size: 16px;
   color: #555;
   max-width: 800px;
@@ -146,7 +147,9 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 80%; 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+  border-radius: 8px;
 }
 
 .videostuff {
@@ -155,7 +158,9 @@ overflow: hidden;
 aspect-ratio: none;
 }
 
-
+.about-text {
+  text-align: left;
+}
 
 /* Responsive Enhancements */
 @media (max-width: 600px) {
