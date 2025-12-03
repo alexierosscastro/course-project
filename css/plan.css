@@ -1,10 +1,14 @@
 /* General layout */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 html {
   background-color: white;
 }
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
@@ -24,7 +28,7 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2px;
-  
+
 }
 
 /* Hero Section */
@@ -36,8 +40,8 @@ a {
 
 .hero {
   background-image: url('../images/planbackground.jpg');
-    background-repeat: no-repeat;
- background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .hero h1 {
@@ -99,8 +103,8 @@ body {
   background-color: #e2ab5a;
   color: white;
   display: flex;
-  justify-content: center; 
-  align-items: center;  
+  justify-content: center;
+  align-items: center;
   cursor: grab;
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -121,6 +125,7 @@ body {
   background-color: #fafafa;
   padding: 10px;
   position: relative;
+  width: 1000px;
 }
 
 .room-plan.drag-over {
@@ -147,8 +152,8 @@ body {
 
 /* Placed items inside the room */
 .placed-item {
-  resize: both;
-  overflow: auto;
+  resize: both;  /* KEEP THIS */
+  overflow: auto;  /* CHANGE from hidden to auto */
   min-width: 50px;
   min-height: 30px;
   padding: 8px 12px;
@@ -157,10 +162,18 @@ body {
   text-align: center;
   border-radius: 4px;
   border: 1px solid #666;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   cursor: move;
   position: absolute;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 100px;
+  height: 100px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
 }
 
 .dragging {
@@ -169,31 +182,39 @@ body {
 }
 
 .directions {
-    margin: 30px 20px;
-     padding: 15px 15px 15px 30px;
-    border-top: 2px solid #ccc;
-    background-color: #f7f7f7;
-    border-radius: 6px;
+  margin: 30px 20px;
+  padding: 15px 15px 15px 30px;
+  border-top: 2px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 6px;
 }
 
 .directions h3 {
-    margin-top: 0;
-    font-size: 30px;
+  margin-top: 0;
+  font-size: 30px;
 }
 
 .directions ul {
-    margin: 10px 0 0 20px;
-    font-size: 20px;
-   padding: 15px 15px 15px 60px;
+  margin: 10px 0 0 20px;
+  font-size: 20px;
+  padding: 15px 15px 15px 60px;
 }
 
 #mute-btn {
-    font-size: 24px; 
-    width: 50px;       
-    height: 50px;      
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  font-size: 24px;
+  width: 70px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.placed-item.resizing {
+  pointer-events: none;
+}
+
+.placed-item.resizing, .resize-handle {
+  pointer-events: auto;
 }

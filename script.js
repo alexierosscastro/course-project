@@ -70,6 +70,7 @@ function checkTrashHover(el) {
 
 // make items draggable inside the room
 function makeRoomDraggable(el) {
+
     let offsetX = 0;
     let offsetY = 0;
     let isDragging = false;
