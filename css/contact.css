@@ -14,7 +14,6 @@ body {
   margin: 0 auto 60px;
   padding: 40px 20px;
   background-color: #f0f0f0; /* light gray background */
-  background-image: url('images/floor123'); /* path to your image */
   background-size: cover; /* cover entire container */
   background-position: center; /* center the image */
   border-radius: 10px; /* optional: rounded corners */
@@ -36,8 +35,14 @@ a {
 .hero {
   text-align: center;
   padding: 200px 20px 60px;
-  background: linear-gradient(to right, #f9f9f9, #eaeaea);
-  background-image: url('images/backgroundweb.jpeg')
+}
+
+
+.hero {
+  background-image: url('../images/contactbackground.jpg');
+   background-repeat: no-repeat;
+ background-size: cover;
+
 }
 
 .hero h1 {

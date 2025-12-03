@@ -31,6 +31,12 @@ a {
   background: linear-gradient(to right, #f9f9f9, #eaeaea);
 }
 
+.hero {
+  background-image: url('../images/desiagnbackground1.jpg');
+  background-repeat: no-repeat;
+ background-size: cover;
+}
+
 .hero h1 {
   font-size: 36px;
   color: #444;

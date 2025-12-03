@@ -29,6 +29,12 @@ a {
   background: linear-gradient(to right, #f9f9f9, #eaeaea);
 }
 
+.hero {
+  background-image: url('../images/homebackground.jpg');
+    background-repeat: no-repeat;
+ background-size: cover;
+}
+
 .hero h1 {
   font-size: 50px;
   margin-bottom: 10px;
